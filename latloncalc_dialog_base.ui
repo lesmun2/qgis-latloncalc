@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>spbLonS_2</class>
+ <widget class="QDialog" name="spbLonS_2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculadora Lat/Lon</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Latitud</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spbLatD">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string> D</string>
+   </property>
+   <property name="maximum">
+    <number>90</number>
+   </property>
+   <property name="value">
+    <number>14</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spbLatM">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string> M</string>
+   </property>
+   <property name="maximum">
+    <number>59</number>
+   </property>
+   <property name="value">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spbLatS">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>80</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string> S</string>
+   </property>
+   <property name="maximum">
+    <double>59.990000000000002</double>
+   </property>
+   <property name="singleStep">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbLat">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>80</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>N</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>S</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spbLatDD">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>80</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string>  DD</string>
+   </property>
+   <property name="decimals">
+    <number>6</number>
+   </property>
+   <property name="minimum">
+    <double>-90.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>90.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>14.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Longitud</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spbLonD">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string> D</string>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>180</number>
+   </property>
+   <property name="value">
+    <number>87</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spbLonM">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>240</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string> M</string>
+   </property>
+   <property name="maximum">
+    <number>59</number>
+   </property>
+   <property name="value">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spbLonS">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>240</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string> S</string>
+   </property>
+   <property name="minimum">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>59.990000000000002</double>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <double>0.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbLon">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>240</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>W</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>E</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spbLonDD">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>240</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string>  DD</string>
+   </property>
+   <property name="decimals">
+    <number>6</number>
+   </property>
+   <property name="minimum">
+    <double>-90.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>180.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>87.000000000000000</double>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
